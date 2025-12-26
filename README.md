@@ -5,6 +5,35 @@ This repository provides a comprehensive template for building and deploying mac
 
 Steps to follow in this template:
 1. **GitHub Repo Setup**: Create a new GitHub repository for your project.
+    - cretate a new repository on GitHub.
+    - Clone the repository to your VS Code or local machine:
+      ```bash
+      git clone <repository_url>
+      ```
+    - Navigate into the project directory:
+      ```bash
+      cd <repository_name>
+      ```
+    - Initialize a new Git repository (if not already done):
+      ```bash
+      git init
+      ```
+    - configure your Git username and email:
+      ```bash
+      git config --global user.name "Your Name"
+      git config --global user.email "<your_email>"
+      ```
+    - Add all files to staging:
+      ```bash
+      git add .
+      ```
+    - Commit the changes:
+      ```bash     git commit -m "Initial commit"
+      ```
+    - Push the changes to GitHub:
+      ```bash
+      git push origin main
+      ```
 2. **Environment Setup**: Create and manage your Python environment using `venv` or `conda`.
     - Create a virtual environment: 
       ```Git bash
@@ -67,3 +96,20 @@ Here are some sample datasets from Kaggle that you can use for practicing end-to
 - Mlops/MLflow
 - CI/CD tools (GitHub Actions)
 
+### References:
+- [Python Official Documentation](https://docs.python.org/3/)
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [NumPy Documentation](https://numpy.org/doc/)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+- [Seaborn Documentation](https://seaborn.pydata.org/)
+- [PyYAML Documentation](https://pyyaml.org/wiki/PyYAMLDocumentation)
+- [Python Logging](https://docs.python.org/3/library/logging.html)
+- [Docker Documentation](https://docs.docker.com/)
+- [Flask Documentation](https://flask.palletsprojects.com/)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [MLflow Documentation](https://mlflow.org/docs/latest/index.html)
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+
+### License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
