@@ -21,6 +21,7 @@ list_of_files = [
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/entity/config_entity.py",
     f"src/{project_name}/constants/__init__.py",
+    "data/toy.csv",
     "config/config.yaml",
     "params.yaml",
     "schema.yaml",
@@ -31,7 +32,6 @@ list_of_files = [
     "research/trials.ipynb",
     "templates/index.html"
 ]
-
 
 for filepath in list_of_files:
     filepath = Path(filepath) # path method convert string filepath into system path

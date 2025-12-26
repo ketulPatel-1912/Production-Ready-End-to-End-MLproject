@@ -28,20 +28,57 @@ Steps to follow in this template:
       git add .
       ```
     - Commit the changes:
-      ```bash     git commit -m "Initial commit"
+      ```bash     
+      git commit -m "Initial commit"
       ```
     - Push the changes to GitHub:
       ```bash
       git push origin main
       ```
-2. **Environment Setup**: Create and manage your Python environment using `venv` or `conda`.
+2. **Project template Creation**: Use this template to set up your project structure.
+    - template.py file to create the project structure automatically.
+      ```bash
+      python template.py
+      ```
+    Explaination of directories and files created:
+    - `data/`: Directory to store datasets.
+    - `components/`: Reusable components for different stages of the ML pipeline.
+    - `utils/`: Utility functions and helpers.
+    - `artifacts/`: Directory to store model artifacts and outputs.
+    - `notebooks/`: Jupyter notebooks for experimentation and analysis.
+    - `src/`: Source code for the project.
+    - `configs/`: Configuration files for different environments.
+    - `config/configuration.py`: Main configuration file for the project.
+    - `pipeline/`: Directory for pipeline scripts.
+    - `entity/`: Directory for data classes and entities.
+    - `entity/config_entity.py`: Configuration entity definitions.
+    - `constants/`: Directory for constant values used in the project.
+    - `logs/`: Directory to store log files.
+    - `requirements.txt`: File to list project dependencies.
+    - `config/config.yaml`: YAML configuration file.
+    - `params.yaml` : File to store hyperparameters and other parameters.
+    - `schema.yaml`: File to define the schema for data.
+    - `main.py`: Main entry point for the project.
+    - `app.py`: Application entry point.
+    - `requirements.txt`: File to list project dependencies.
+    - `setup.py`: Script for setting up the project. 
+      > Without setup.py, if you are working in a notebook in a different folder, you cannot easily do import src.processing.
+      > By running pip install -e . in your project root:
+      > Your project is installed into your virtual environment.
+      > You can import your custom functions from anywhere on your computer.
+      > The -e (editable) flag means if you change the code in processing.py, the changes are updated instantly without re-installing.
+    - `research/trials.ipynb`: Jupyter notebook for experimentation.
+    - `templates/index.html`: HTML template for the web application.
+
+3. **Environment Setup**: Create and manage your Python environment using `venv` or `conda`.
     - Create a virtual environment: 
       ```Git bash
       python -m venv venv_mlproj
       ```
-      source venv_mlproj/bin/activate  # On Windows use `venv_mlproj\Scripts\activate`
+      On Windows use 
+      .\venv_mlproj\Scripts\Activate.ps1
       ```
-    - Install required packages:
+    - Install required packages (listed in `requirements.txt`):
       ```bash
       pip install -r requirements.txt
       ```
@@ -57,7 +94,6 @@ Steps to follow in this template:
       ```bash
       pip list
       ```
-3. **Project template Creation**: Use this template to set up your project structure.
 4. **Project Setup**: Initialize your project with necessary files and directories.
 5. **Logging, Exception and Utility Setup**: Implement logging, exception handling, and utility functions.
 6. **Project Workflow**:
